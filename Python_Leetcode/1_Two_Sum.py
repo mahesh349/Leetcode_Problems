@@ -6,5 +6,14 @@ You may assume that each input would have exactly one solution, and you may not 
 You can return the answer in any order.
 """
 
+nums = [3,2,4]
+target = 6
 
+for i in nums:
+    temp = target - i
+    if temp in nums and temp+i == target:
+        print([nums.index(temp),nums.index(i)])
+        break
+    else:
+        continue
 
